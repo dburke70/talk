@@ -73,6 +73,7 @@ class CommentReactions extends React.Component {
 
   render() {
     const { comment, emit } = this.props;
+
     this.setCommentReactionsRef = reactionsContainerRef => {
       if (reactionsContainerRef) {
         const actionsContainer = this.findParent(
