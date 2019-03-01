@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'UnifySans';
+    src: url('https://cpt-static.gannettdigital.com/universal-web-client/master/latest/gallium/themes/assets/universal/fonts/UnifySans_W_Rg.woff2') format('woff2'),
+         url('https://cpt-static.gannettdigital.com/universal-web-client/master/latest/gallium/themes/assets/universal/UnifySans_W_Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'UnifySans-SemiBold';
+    src: url('https://cpt-static.gannettdigital.com/universal-web-client/master/latest/gallium/themes/assets/universal/fonts/UnifySans_W_SBd.woff2') format('woff2'),
+         url('https://cpt-static.gannettdigital.com/universal-web-client/master/latest/gallium/themes/assets/universal/UnifySans_W_SBd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'UnifySans', Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0 0 105px 0;
+}
+
+strong {
+    font-family: 'UnifySans-SemiBold';
+}
+
+.forced-hidden {
+    display: none !important;
+}
+
+.talk-slot-comment-actions,
+.talk-plugin-flags-icon,
+.talk-plugin-viewing-options i:first-child,
+.talk-plugin-respect-icon,
+.talk-plugin-replies-icon,
+.talk-plugin-ignore-user-section:nth-child(2),
+.talk-plugin-auth--delete-my-account,
+.talk-plugin-flags-popup div:before,
+.talk-plugin-flags-popup div:after {
+    display: none;
+}
+
+.talk-plugin-viewing-options span {
+    display: inline-block !important;
+}
+
+.talk-tab-content {
+    padding-top: 0;
+}
+
+#stream {
+    margin-top: 0;
+}
+
+.talk-plugin-commentbox-textarea {
+    margin-top: 0;
+}
+
+.talk-plugin-commentbox-button-container {
+    margin-top: 0;
+}
+
+.talk-plugin-commentbox-button,
+.commentbox-button-success {
+    background-color: #009bff;
+    color: #fff;
+    padding: 0;
+    width: 100%;
+}
+
+.talk-plugin-commentbox-button:hover,
+.commentbox-button-success:hover,
+.talk-plugin-commentbox-button:disabled,
+.commentbox-button-success:disabled {
+    background-color: #009bff;
+    color: #fff;
+}
+
+.talk-tab-button {
+    font-size: 14px;
+}
+
+.talk-tab-count {
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    font-family: 'UnifySans-SemiBold';
+    min-width: 0;
+    padding: 4px 0 0;
+    vertical-align: top;
+}
+
+.talk-tab-count::before {
+    content: "(";
+}
+
+.talk-tab-count::after {
+    content: ")";
+}
+
+.talk-stream-comment-header {
+    margin: 0;
+}
+
+.talk-stream-comment-header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.talk-stream-comment-user-name {
+    margin-right: 6px;
+}
+
+.talk-plugin-tag-label,
+.talk-slot-comment-author-tags span {
+    background-color: transparent;
+    color: #696969;
+    font-style: italic;
+    margin: 0;
+    padding: 0 6px 0 0;
+    text-transform: capitalize;
+}
+
+.talk-slot-comment-author-tags {
+    margin: 0;
+}
+
+.talk-stream-comment-user-byline {
+    font-size: inherit;
+}
+
+.talk-slot-comment-timestamp {
+    line-height: 17px;
+}
+
+.talk-plugin-tag-label::before,
+.talk-comment-timeago::before,
+.talk-slot-comment-author-tags span::before {
+    content: "|";
+    font-style: normal;
+    padding-right: 6px;
+    line-height: 17px;
+}
+
+.talk-plugin-viewing-options {
+    float: right;
+}
+
+.talk-stream-comment-content {
+    margin: 8px 0 9px;
+}
+
+.talk-plugin-respect-button,
+.talk-plugin-replies-reply-button,
+.talk-plugin-flags-button {
+    font-size: 10px;
+    margin: 0 24px 0 0;
+}
+
+.talk-plugin-respect-label,
+.talk-plugin-replies-label,
+.talk-plugin-flags-button-text {
+    border-bottom: solid 2px #009bff;
+    display: inline-block;
+    font-family: 'UnifySans-SemiBold';
+}
+
+.talk-plugin-rich-text-text {
+    color: rgba(0, 0, 0, 0.73);
+}
+
+.talk-plugin-rich-text-content {
+    font-size: 16px;
+    /* -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0); */
+}
+
+.talk-slot-comment-author-name span {
+    white-space: nowrap;
+}
+
+.talk-plugin-respect-respected {
+    color: #000 !important;
+}
+
+.talk-plugin-respect-count,
+.gannett-reply-count {
+    padding-left: 5px;
+}
+
+.talk-embed-stream-comment-actions-container-right {
+    justify-content: flex-start;
+}
+
+.talk-plugin-flags-popup div {
+    min-width: 200px;
+    right: inherit;
+}
+
+.talk-stream-comment-wrapper {
+    border-top: solid 1px #eee;
+    margin-top: 15px;
+}
+
+.talk-load-more .talk-load-more-button {
+    background-color: transparent;
+    border: none;
+    color: #111;
+    font-size: 12px;
+    font-family: 'UnifySans-SemiBold';
+    padding-left: 0;
+    text-align: left;
+}
+
+.talk-load-more:hover .talk-load-more-button {
+    background: transparent !important;
+    color: #111 !important;
+    display: inline-block !important;
+}
+
+.talk-load-more-replies .talk-load-more-button::before {
+    content: 'Show more ';
+    font-family: 'UnifySans';
+    text-transform: none;
+}
+
+.talk-load-more-replies .talk-load-more-button::after {
+    -webkit-transform: rotate(45deg);
+    content: ' ';
+    border: solid #111;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 2px;
+    margin-left: 7px;
+    transform: rotate(45deg);
+}
+
+.commentActionsLeft, .replyActionsLeft {
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+}
+
+.talk-plugin-rich-text-container label {
+    display: none;
+}
+
+.talk-load-more-replies {
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}

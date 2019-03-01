@@ -1,0 +1,21 @@
+.headerContainer {
+  margin-bottom: 8px;
+}
+
+.headerUsername {
+  padding-left: 3px;
+}
+
+.teaserButton {
+  background-color: #009bff;
+  border-color: #009bff;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: .4px;
+  padding: 12px 15px 13px;
+  width: 100%;
+}
+
+.teaserButton:hover {
+  cursor: pointer;
+}
