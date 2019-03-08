@@ -57,7 +57,7 @@ class DraftArea extends React.Component {
             emit(actionName);
 
             if (iOSversion === 11) {
-              emit('action.gannett_text_editor_position');
+              emit('action.gannett_text_editor_focus_iOS11');
             }
           };
         }
