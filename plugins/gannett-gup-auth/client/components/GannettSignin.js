@@ -10,16 +10,6 @@ class GannettSignin extends React.Component {
 
   handleClick = function() {
     this.props.emit('action.gannett_posting_not_authorized');
-
-    this.setState({
-      disableTextArea: true,
-    });
-
-    setTimeout(() => {
-      this.setState({
-        disableTextArea: false,
-      });
-    }, 100);
   };
 
   render() {
@@ -37,11 +27,12 @@ class GannettSignin extends React.Component {
         className={styles.gannettSigninWrapper}
         onClick={() => this.handleClick()}
       >
+        <div className={styles.gannettSigninOverlay} />
         <DraftArea
-          id="gannettSigninWrapper"
+          id="gannettSigninText"
           root={root}
           input={input}
-          disabled={this.state.disableTextArea}
+          disabled={false}
           charCountEnable={false}
           onInputChange={() => {}}
         />

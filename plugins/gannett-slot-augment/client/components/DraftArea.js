@@ -25,17 +25,6 @@ class DraftArea extends React.Component {
       return null;
     }
 
-    const iOSversion = () => {
-      if (/iP(hone|od|ad)/.test(navigator.platform)) {
-        const v = navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/);
-        // const major = parseInt(v[1], 10);
-        // const minor = parseInt(v[2], 10);
-        // const version =  parseInt(v[3] || 0, 10);
-        // return `{major}.{minor}.{version}`;
-        return parseInt(v[1], 10);
-      }
-    };
-
     this.setDraftArea = draftAreaSpanRef => {
       if (draftAreaSpanRef) {
         const commentboxContainer = this.findParent(
@@ -48,17 +37,22 @@ class DraftArea extends React.Component {
             '.talk-plugin-rich-text-content'
           );
 
-          const actionName =
+          let actionName =
             typeof comment === 'undefined'
               ? 'action.gannett_text_editor_focus'
               : 'action.gannett_text_editor_reply_focus';
 
+          if (/iP(hone|od|ad)/.test(navigator.platform)) {
+            const vers = navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/);
+            const version = vers.length > 1 ? parseInt(vers[1], 10) : 0;
+
+            if (version === 11) {
+              actionName = `${actionName}_iOS11`;
+            }
+          }
+
           richTextEl.onfocus = () => {
             emit(actionName);
-
-            if (iOSversion === 11) {
-              emit('action.gannett_text_editor_focus_iOS11');
-            }
           };
         }
       }
