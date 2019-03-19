@@ -220,12 +220,10 @@ strong {
 }
 
 .talk-load-more-replies .talk-load-more-button::before {
-    content: 'Show more ';
-    font-family: 'UnifySans';
-    text-transform: none;
+    content: 'Show More ';
 }
 
-.talk-load-more-replies .talk-load-more-button::after {
+.talk-load-more-button::after {
     -webkit-transform: rotate(45deg);
     content: ' ';
     border: solid #111;

@@ -1,6 +1,12 @@
 en:
   gannett-reply-count:
     replies: Replies
+  gannett-embed:
+    comment-title: All
+    show-more-comments: Show More Comments
 es:
   gannett-reply-count:
     replies: Respuestas
+  gannett-embed:
+    comment-title: Todos
+    show-more-comments: Mostrar Mas Comentarios

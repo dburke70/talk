@@ -4,10 +4,6 @@ import DraftArea from 'coral-embed-stream/src/tabs/stream/containers/DraftArea';
 import t from 'coral-framework/services/i18n';
 
 class GannettSignin extends React.Component {
-  state = {
-    disableTextArea: false,
-  };
-
   handleClick = function() {
     this.props.emit('action.gannett_posting_not_authorized');
   };
